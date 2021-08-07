@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class DilutedEarningsPerShare{
+public class BasicData {
     private String label;
     private double value;
     private String unit;

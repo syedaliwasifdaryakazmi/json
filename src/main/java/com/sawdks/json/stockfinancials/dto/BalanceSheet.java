@@ -7,16 +7,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BalanceSheet{
-    private NoncurrentLiabilities noncurrent_liabilities;
-    private FixedAssets fixed_assets;
-    private EquityAttributableToNoncontrollingInterest equity_attributable_to_noncontrolling_interest;
-    private CurrentLiabilities current_liabilities;
-    private EquityAttributableToParent equity_attributable_to_parent;
-    private Equity equity;
-    private Liabilities liabilities;
-    private Assets assets;
-    private OtherThanFixedNoncurrentAssets other_than_fixed_noncurrent_assets;
-    private CurrentAssets current_assets;
-    private LiabilitiesAndEquity liabilities_and_equity;
-    private NoncurrentAssets noncurrent_assets;
+    private BasicData noncurrent_liabilities;
+    private BasicData fixed_assets;
+    private BasicData equity_attributable_to_noncontrolling_interest;
+    private BasicData current_liabilities;
+    private BasicData equity_attributable_to_parent;
+    private BasicData equity;
+    private BasicData liabilities;
+    private BasicData assets;
+    private BasicData other_than_fixed_noncurrent_assets;
+    private BasicData current_assets;
+    private BasicData liabilities_and_equity;
+    private BasicData noncurrent_assets;
 }
