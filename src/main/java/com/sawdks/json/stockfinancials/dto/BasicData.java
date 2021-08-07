@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class BasicData {
     private String label;
-    private double value;
+    private Float value;
     private String unit;
     private int order;
 }
