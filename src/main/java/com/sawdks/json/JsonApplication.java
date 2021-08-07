@@ -9,6 +9,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 public class JsonApplication {
 
@@ -21,9 +24,11 @@ public class JsonApplication {
 		 Root root = om.readValue(myJsonString, Root.class);
 		System.out.println("Parsed");
 		System.out.println(root.getCount());
+		List<StockFinancialsV2> lstStockFinancialsV2 = new ArrayList<>();
 		for (Result result : root.getResults()){
 
 			StockFinancialsV2 stockFinancialsV2 = new StockFinancialsV2(result);
+			lstStockFinancialsV2.add(stockFinancialsV2);
 		}
 	}
 
